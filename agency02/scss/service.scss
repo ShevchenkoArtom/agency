@@ -1,0 +1,41 @@
+.service {
+    padding-top: 84px;
+    padding-bottom: 15px;
+    &__container {
+        @include container;
+    }
+    &__inner {
+        text-align: center;
+    }
+    &__title-wrap {
+        h2 {
+            @include mainTitle;
+            margin-bottom: 8px;
+        }
+        p {
+            margin-bottom: 60px;
+            @include textFz18;
+        }
+    }
+    &__card {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 40px 20px;
+        }
+        
+        border: 1px solid $whiteE5;
+        border-radius: 40px;
+        padding: 50px 20px 36px 20px;
+
+        img {
+            padding: 19px;
+            background-color: rgba(84, 94, 225, 0.2);
+            border-radius: 50%;
+        }
+        &:hover {
+            background: #545EE1;
+            box-shadow: 0px 4px 35px 0px rgba(84, 94, 225, 0.55);
+        }
+    }
+}

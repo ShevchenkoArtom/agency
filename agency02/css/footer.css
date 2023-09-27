@@ -1,0 +1,6 @@
+.footer__inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2fr)[4];
+  grid-template-columns: repeat(4, 2fr);
+}

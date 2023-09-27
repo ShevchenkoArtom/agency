@@ -1,0 +1,111 @@
+$textInter: 'Inter', sans-serif;
+$textPoppins: 'Poppins', sans-serif;
+
+
+
+$gray: #BDC2FF;
+$white: #fff;
+$whiteE5: #E5E5E5;
+$grayF3: #F3F4FF;
+
+$darkBlue: #111764;
+$bgBlue: #545EE1;
+
+
+$blackBLue: #080A2B;
+$darkGray: #333;
+$gray666: #666;
+$black1919: #191919;
+
+
+$transition: .2s all ease;
+
+
+
+@mixin container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+@mixin mainTitle {
+    color: $darkGray;
+    font-family: $textInter;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+    @media (max-width:1024px) {
+        font-size: 38px;
+    }
+}
+
+@mixin logo {
+    font-family: $textPoppins;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    span {
+        color: #111764;
+    }
+    &_header {
+        color: $white;
+    }
+    &_footer {
+        color: $bgBlue;
+    }
+}
+
+@mixin graySubtitle {
+    color: $gray666;
+    font-family: $textInter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0.48px;
+    text-transform: capitalize;
+}
+
+@mixin miniTitle {
+    color: #191919;
+    font-family: $textPoppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+@mixin blueBtn {
+    color: #FFF;
+    font-family: $textPoppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    background-color: $bgBlue;
+    padding: 12px 35px;
+    border-radius: 10px;
+    border: 2px solid $bgBlue;
+
+    transition: $transition;
+
+    &:hover {
+        background-color: transparent;
+        color: $bgBlue;
+    }
+}
+
+@mixin textFz18 {
+    color: $darkGray;
+    font-family: $textInter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 200% */
+    letter-spacing: 0.18px;
+    text-transform: capitalize;
+}

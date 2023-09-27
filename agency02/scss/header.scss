@@ -1,0 +1,41 @@
+.header {
+    &__container {
+        @include container;
+    }
+    &__top {
+        padding: 22px 0;
+        background-color: $bgBlue;
+    }
+    &__inner-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav {
+        &-list {
+            display: flex;
+            gap: 0 30px;
+        }
+        &-link {
+            color: $gray;
+            font-family: $textPoppins;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            transition: $transition;
+            &_active {
+                font-weight: 700;
+                color: $white
+            }
+            &:hover {
+                font-weight: 700;
+                color: $white
+            }
+        }
+    }
+}
+
+.logo {
+    @include logo;
+}

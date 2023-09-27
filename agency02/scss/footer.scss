@@ -1,0 +1,79 @@
+.footer {
+    padding: 88px 0 58px 0;
+    border-top: 1px solid $whiteE5;
+    background-color: $grayF3;
+    &__container {
+        @include container;
+    }
+    &__inner {
+        display: grid;
+        grid-template-columns: 4fr 2fr 2fr 2fr 2fr;
+        gap: 0 50px;
+        align-items: top;
+    }
+
+    p.gray-subtitle {
+        margin-top: 34px;
+        @include graySubtitle;
+    }
+    &__column {
+        &-title h2 {
+            color: $black1919;
+            font-family: $textPoppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-transform: capitalize;
+            margin-bottom: 24px;
+        }
+        &-item {
+            margin-bottom: 8px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            a {
+                @include graySubtitle;
+                font-weight: 500;
+                transition: $transition;
+                &:hover {
+                    color: $bgBlue;
+                    text-decoration: underline;
+                }
+                svg {
+                    max-height: 23px;
+                    max-width: 17px;
+                }
+            }
+            p {
+                margin-top: 8px;
+                &:first-child {
+                    margin-top: 0;
+                }
+                }
+            &-sublist {
+                display: flex;
+                gap: 0 10px;
+                margin-top: 25px;
+                li a {
+                    max-width: 30px;
+                    max-height: 30px;
+                    background-color: $white;
+                    border: 2px solid $white;
+                    border-radius: 7px;
+                    transition: $transition;
+                    &:hover {
+                        border: 2px solid $bgBlue;
+                    }
+                    &:nth-child(1) {
+                        padding: 6px 7px 6px 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+svg use{
+    color: $bgBlue;
+}
